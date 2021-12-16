@@ -139,7 +139,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
         PlaySound(TEXT("1.wav"), NULL, SND_ASYNC | SND_SENTRY);
         GetObject(hBitmapimg[0], sizeof(bmImg), &bmImg);
 
-        SetWindowPos(hWnd, hWnd, 0, 0, bmImg.bmWidth + 15, bmImg.bmHeight + 60, SWP_NOZORDER | SWP_NOMOVE);
+        SetWindowPos(hWnd, hWnd, 0, 0, bmImg.bmWidth + 15, bmImg.bmHeight + 40, SWP_NOZORDER | SWP_NOMOVE);
         break;
     case WM_PAINT:
     {
