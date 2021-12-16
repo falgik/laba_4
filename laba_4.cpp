@@ -8,7 +8,7 @@
 
 
 #define MAX_LOADSTRING 100
-#define IMAGECOUNT 47 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#define IMAGECOUNT 14
 
 // Глобальные переменные:
 HINSTANCE hInst;                                // текущий экземпляр
@@ -125,7 +125,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
     {
     case WM_CREATE:
 
-        buf = _T("var2\\0.bmp");//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        buf = _T("var1\\0.bmp");
         for (int i = 0; i < IMAGECOUNT; i++)
         {
             while (buf.size() > 5)
